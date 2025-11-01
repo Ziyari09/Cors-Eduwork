@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Biodata Saya</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: rgb(78, 78, 226);
+            color: #333;
+        }
+
+        .container {
+            background: white;
+            max-width: 1000px;
+            margin: 30px auto;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+
+        /* Section 1 - Menu */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background: #f1f1f1;
+        }
+
+        header .brand {
+            font-weight: bold;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black;
+            margin-left: 10px;
+        }
+
+        /* Section 2 - Judul + Gambar */
+        .intro {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px;
+        }
+
+        .intro .text {
+            width: 60%;
+        }
+
+        .intro img {
+            width: 25%;
+            border-radius: 10px;
+        }
+
+        /* Section 3 - Biodata */
+        .biodata {
+            padding: 30px;
+            
+            text-align: center;
+        }
+
+        .ukuran{
+            width: 100px;
+        }
+
+        .biodata h2 {
+            margin-bottom: 10px;
+            margin-left: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        td {
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+
+        /* Section 4 - Portofolio */
+        .portfolio {
+            padding: 30px;
+            text-align: center;
+        }
+
+        .portfolio h2 {
+            margin-bottom: 10px;
+        }
+
+        .projects {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .project {
+            width: 30%;
+            background: #f9f9f9;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .project img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .intro {
+                flex-direction: column;
+            }
+            .intro .text, .intro img {
+                width: 100%;
+            }
+            .project {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Section 1 -->
+        <header>
+            <div class="brand">Brand</div>
+            <nav>
+                <a href="#">Header</a>
+                <a href="#">Biodata</a>
+                <a href="#">Portofolio</a>
+            </nav>
+        </header>
+
+        <!-- Section 2 -->
+        <section class="intro">
+            <div class="text">
+                <h2>Selamat Datang di Website Saya</h2>
+                <p>Ini adalah contoh halaman profil sederhana menggunakan HTML dan CSS. Kolom kiri berisi teks, kolom kanan gambar.</p>
+            </div>
+            <img class="ukuran" src="../Tugas/img/WhatsApp_Image_2025-05-10_at_08.48.43_7cc24a0e-removebg-preview.png" alt="Foto Profil">
+        </section>
+
+        <!-- Section 3 -->
+        <section class="biodata">
+            <h2>About Me</h2>
+            <p>A brief introduction about myself</p>
+            <table>
+                <tr>
+                    <td>Full Name</td>
+                    <td>Education</td>
+                    <td>Pekerjaan</td>
+                </tr>
+
+                <tbody>
+                    <tr>
+                        <td>Al Kautsar Diprajaya</td>
+                        <td>Stmik Indonesia Banjarmasin</td>
+                        <td>Mahasiswa</td>
+                    </tr>
+                    
+                </tbody>
+                <tr>
+                    <td>Contact</td>
+                    <td>Hobi</td>
+                    <td>Alamat</td>
+                </tr>
+
+                <tbody>
+                    <tr>
+                        <td>089531473890</td>
+                        <td>Basket</td>
+                        <td>Jl.Sungai Jingah </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Section 4 -->
+        <section class="portfolio">
+            <h2>Portofolio</h2>
+            <div class="projects">
+                <div class="project">
+                    <img src="../Tugas/img/Screenshot (146).png" alt="Proyek 1">
+                    <h4>Proyek 1</h4>
+                    <p>Membuat Login Page Memakai Html Css</p>
+                </div>
+                <div class="project">
+                    <img src="../Tugas/img/Screenshot (265).png" alt="Proyek 2">
+                    <h4>Proyek 2</h4>
+                    <p>Membuat Layout Portofolio Coffee Shopp</p>
+                </div>
+                <div class="project">
+                    <img src="../Tugas/img/Screenshot (347).png" alt="Proyek 3">
+                    <h4>Proyek 3</h4>
+                    <p>Membuat Layout Portofolio</p>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
