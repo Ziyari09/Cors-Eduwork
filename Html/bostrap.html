@@ -1,65 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
-</head>
-<body>
-    
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+  </head>
+  <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-success">
-  <div class="container-fluid">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="#">Navbar</a>
 
-    <a class="navbar-brand fw-bold" href="#">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-    
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
- 
-    <div class="collapse navbar-collapse" id="navMenu">
-      <ul class="navbar-nav ms-auto mb-2 text-center mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active " href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Email</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Report</a>
-        </li>
-      </ul>
-    </div>
-
-  </div>
-</nav>
-
-
-<section class="">
-        <p class="text-center h1 ">Belajar grid & text</p>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-12 " style="background-color: red;">Conten 1</div>
-                <div class="col-lg-4 col-md-6 col-sm-6 " style="background-color: blue;">Conten 1</div>
-                <div class="col-lg-4 col-md-6 col-sm-6 " style="background-color: green;">Conten 1</div>
-            </div>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto mb-2 text-center mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Email</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Report</a>
+            </li>
+          </ul>
         </div>
-        <h1 class="h1 text-center mt-4">Heding 1</h1>                                    
-        <p class="h1 text-center ">Heding 1 dengan Paragraf</p>
+      </div>
+    </nav>
 
-        <div class="d-flex gap-4 justify-content-center mt-5">
-              <p class="text-danger">Teks Warna Merah</p>
-              <p class="text-warning">Teks Warna kuning</p>
-              <p class="text-primary">Teks Warna Biru</p>
+    <section class="">
+      <p class="text-center h1">Belajar grid & text</p>
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-lg-4 col-md-6 col-sm-12"
+            style="background-color: red"
+          >
+            Conten 1
+          </div>
+          <div
+            class="col-lg-4 col-md-6 col-sm-6"
+            style="background-color: blue"
+          >
+            Conten 1
+          </div>
+          <div
+            class="col-lg-4 col-md-6 col-sm-6"
+            style="background-color: green"
+          >
+            Conten 1
+          </div>
         </div>
-      
-</section>
+      </div>
+      <h1 class="h1 text-center mt-4">Heding 1</h1>
+      <p class="h1 text-center">Heding 1 dengan Paragraf</p>
 
-<script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+      <div class="d-flex gap-4 justify-content-center mt-5">
+        <p class="text-danger">Teks Warna Merah</p>
+        <p class="text-warning">Teks Warna kuning</p>
+        <p class="text-primary">Teks Warna Biru</p>
+      </div>
+    </section>
+
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
