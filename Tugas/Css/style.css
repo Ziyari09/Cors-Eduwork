@@ -47,10 +47,13 @@ body {
 
 /* Hero section (pakai grid) */
 .hero {
-  padding: 60px 100px;
-  margin-top: 100px;
-  gap: 300px;
+  padding: 60px 40px;
+  margin-top: 50px;
+  min-height: 100vh;   
+  display: flex;
+  align-items: center; 
 }
+
 
 .grid-container {
   display: grid;
@@ -219,6 +222,42 @@ footer p{
 
   .hero {
     padding: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  /* Perbaiki padding biar tidak meluber */
+  .hero {
+    padding: 20px;
+    margin-top: 30px;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+    padding: 0;
+    gap: 40px;
+    text-align: center;
+    justify-items: center;
+  }
+
+  /* Navbar hilang */
+  .nav-links {
+    display: none;
+  }
+
+  /* Heading */
+  .text-content h2 {
+    font-size: 24px;
+  }
+  .text-content h3 {
+    font-size: 20px;
+  }
+
+  /* Gambar */
+  .image-content img {
+    width: 220px;
+    border-radius: 20px;
   }
 }
 
